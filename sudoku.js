@@ -7,7 +7,7 @@ function getRow (grid, row) {
     let result = [];
     for (let i = 0; i < NINE; i++) {
         result.push(grid[row][i]);
-        console.log(grid[row][i]);
+       
     }
     return result;
 }              
@@ -90,9 +90,7 @@ function isSame(puzzle, puzzle2){
         for(let j = 0; j < NINE; j++){
             if(puzzle[i][j] === puzzle2[i][j]){
                 correctItems++;    
-            }
-
-           
+            }           
         }
         if (correctItems === NINE) {
             correctRows++;
